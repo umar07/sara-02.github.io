@@ -72,7 +72,7 @@ li a:hover{
 	padding-left:15px;
 }
 .vertical-menu a {
-  background-color: #eee;
+ /* background-color: #eee;*/
   color: black;
   display: block;
   padding: 12px;
@@ -80,7 +80,7 @@ li a:hover{
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  color: darkblue;
 }
 .fa-linkedin {
   background: #007bb5;
