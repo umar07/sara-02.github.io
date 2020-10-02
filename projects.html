@@ -1,12 +1,26 @@
 <html>
 <head>
 	<title>Projects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body {
 			background-color: #f2f2f2;
 		}
 		#one {
-			text-align: center;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: right;
+	width:100%;
+	/* height:60px;*/
+	background-color:#a3c2c2;
+	opacity:0.8;
+	box-sizing:border-box;
+	padding:10px 50px;
+	top:0; left:0;
+}
+		#heading {
+			text-align: left;
 			font-size:45px;
 			color:#804000;
 			letter-spacing:1px;
@@ -23,10 +37,44 @@
 		li{
 			font-size:20px;
 		}
+		ul.p1{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	/*position:fixed;*/
+	top:0;
+	}
+	li.p2{
+		float:left;
+	}
+	 li.p2 a{
+	font-family:calibri;
+	float:right;
+	text-decoration:none;
+	color:darkblue;
+	display:inline-block;
+	padding:14px 16px;
+	text-align:center;
+	font-size:30px;
+}
+
+ li.p2 a:hover{
+	background-color:#f0f5f5;
+	 box-shadow: 10px 5px 15px 4px #8888; 
+}
+
 	</style>
 </head>
 <body>
-	<h1 id="one"><strong>Projects</strong></h1><br>
+	<nav id="one">
+		<heading style="font-size:25px;letter-spacing:3px;margin-top:40px;"><i><b><a href="index.html" style="text-decoration:none;color:black;">Sarah Masud</a></b></i></heading>
+		<ul class="p1">
+			<li class="p2"><a href="publication.html">Publications</a></li>
+			<li class="p2"><a href="projects.html">Projects</a></li>
+			<li class="p2"><a href="Sarah_Masud.pdf" target="_blank">CV</a></li>
+		</ul>
+	</nav>	
+	<h1 id="heading"><strong>Projects</strong></h1><br>
 	<h2 class="heading">PhD Course Projects<br><span class="time">Jan 2020- Present</span></h2>
 	<ol>
 		<li> Hate Speech Diffusion Visualization: IR Coursework Interactive Visualize the diffusion of hate comments on a sample Twitter network, in terms of inter-user diffusion(static) and topic-wise temporal diffusion(real-time).<br>
@@ -37,7 +85,7 @@
 		<h2 class="heading">Open Source Contributions<br><span class="time">Dec 2017- Present</span></h2>
 	<ol>
 		<li>Reviewer: Journal of Open Source Software (February 2020 - Present)<br>
-Packages Reviewed:<a href="https://joss.theoj.org/papers/reviewed_by/@sara-02">https://joss.theoj.org/papers/reviewed_by/@sara-02</a>
+<a href="https://joss.theoj.org/papers/reviewed_by/@sara-02">Packages Reviewed</a>
 	</li><br>
 
 		<li>Mentor - Student Code In 2020, osDFS (June 2020- August 2020)<br>
