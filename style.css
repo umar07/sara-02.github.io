@@ -1,0 +1,106 @@
+body{
+	background-color:#f0f5f5 ;
+}
+#one {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: right;
+	width:100%;
+	/* height:60px;*/
+	background-color:#a3c2c2;
+	opacity:0.8;
+	box-sizing:border-box;
+	padding:10px 50px;
+	top:0; left:0;
+}
+ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	/*position:fixed;*/
+	top:0;
+}
+li{
+	float:left;
+} 	
+li a{
+	font-family:calibri;
+	float:right;
+	text-decoration:none;
+	color:darkblue;
+	display:inline-block;
+	padding:14px 16px;
+	text-align:center;
+	font-size:30px;
+}
+
+li a:hover{
+	background-color:#f0f5f5;
+	 box-shadow: 10px 5px 15px 4px #8888; 
+}
+#two{
+	/*float: left;*/
+	margin-left:15px;
+	width:70%;height:70%;
+	border-radius:8px;
+	border:1px solid #ddd;
+	padding:20px 20px 20px 20px;
+}
+.column {
+  float: left;
+  height:100%;
+}
+.row: after{
+	 content: "";
+  display: table;
+  clear: both;
+}
+.column.left{
+	width:20%;
+}
+.column.right{
+	padding-left:60px;
+	width:70%;
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.vertical-menu {
+	padding-left:15px;
+}
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding:1px 1px 1px 1px;
+  margin-right:8px;
+}
+.fa-github{
+	padding:1px 1px 1px 1px;
+  margin-right:8px;
+}
+.fa-envelope-o{
+	padding:1px 1px 1px 1px;
+  margin-right:8px;
+}
+.fa-mortar-board{
+	padding:1px 1px 1px 1px;
+  margin-right:7px;
+}
+.fa-university{
+	padding:1px 1px 1px 1px;
+  margin-right:7px;
+}
