@@ -2,25 +2,24 @@
 <head>
 	<title>Publications</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<style>
 		body {
 			background-color: #f2f2f2;
 		}
-		#one {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	align-items: right;
-	width:100%;
-	/* height:60px;*/
-	background-color:#a3c2c2;
-	opacity:0.8;
-	box-sizing:border-box;
-	padding:10px 50px;
-	top:0; left:0;
-	}
+		.footer {
+			position: absolute;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
 	
 		#heading {
+			margin-left:10px;
 			text-align: left;
 			font-size:40px;
 			color:#804000;
@@ -63,25 +62,44 @@
 	</style>
 </head>
 <body>
-	<nav id="one">
-		<heading style="font-size:25px;letter-spacing:3px;margin-top:40px;"><i><b><a href="index.html" style="text-decoration:none;color:black;">Sarah Masud</a></b></i></heading>
-		<ul class="p1">
-			<li class="p2"><a href="publication.html">Publications</a></li>
-			<li class="p2"><a href="projects.html">Projects</a></li>
-			<li class="p2"><a href="Sarah_Masud.pdf" target="_blank">CV</a></li>
-		</ul>
-	</nav>	
+
+	<nav class="navbar bg-info text-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">SARAH MASUD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav" style="font-size:21px">
+      <li class="nav-item">
+        <a class="nav-link" href="publication.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sarah_Masud.pdf" target="_blank">CV</a>
+      </li>    
+    </ul>
+  </div>  
+</nav><br>
+
 	<h1 id="heading"><strong>Research Publications</strong></h1><br>
 	<ol>
-		<li style="font-size:25px;">Subhabrata Dutta, <b>Sarah Masud</b>, Soumen Chakrabarti and Tanmoy Chakraborty. Deep Exogenous
+		<li style="font-size:22px;">Subhabrata Dutta, <b>Sarah Masud</b>, Soumen Chakrabarti and Tanmoy Chakraborty. Deep Exogenous
 and Endogenous Influence Combination for Social Chatter Intensity Prediction, ACM SIGKDD, 2020.
 (A Core A* conference).<br>
 <a href="https://arxiv.org/abs/2006.07812" class="link" >PAPER</a>
 <a href="https://github.com/LCS2-IIITD/ChatterNet" class="link" >CODE</a></li>
 	<br><br>
-		<li style="font-size:25px;">Tanvir Ahmad, Rafeeq Ahmad, <b>Sarah Masud</b>, Farheen Nilofer. Framework to Extract Context Vectors from Unstructured Data using Big Data Analytics, 9th IC3, 2016.<br>
+		<li style="font-size:22px;">Tanvir Ahmad, Rafeeq Ahmad, <b>Sarah Masud</b>, Farheen Nilofer. Framework to Extract Context Vectors from Unstructured Data using Big Data Analytics, 9th IC3, 2016.<br>
 			<a href="https://ieeexplore.ieee.org/document/7880229" class="link" >PAPER</a>
 			<a href="https://github.com/sara-02/hadoop_dump" class="link">CODE</a></li>
 	</ol>
+
+	<div class="footer">
+		<hr />
+		<h4 style="color:#b30000;">Developed by : <a href="https://www.linkedin.com/in/umarmasud/" target="_blank" style="color:black;font-family:Andale Mono;font-size:24px"><i>Umar Masud</i></a></h4>
+	</div>
+
 </body>
 </html>
