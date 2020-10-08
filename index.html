@@ -5,19 +5,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .footer {
+  	position: absolute;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+</style>
 </head>
+
 <body>
-	<nav id="one">
-		<heading style="font-size:25px;letter-spacing:3px;margin-top:40px;"><i><b><a href="index.html" style="text-decoration:none;color:black;">Sarah Masud</a></b></i></heading>
-		<ul>
-			<li><a href="publication.html">Publications</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="Sarah_Masud.pdf" target="_blank">CV</a></li>
-		</ul>
-	</nav>	
+
+	<nav class="navbar bg-info text-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">SARAH MASUD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav" style="font-size:21px">
+      <li class="nav-item">
+        <a class="nav-link" href="publication.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sarah_Masud.pdf" target="_blank">CV</a>
+      </li>    
+    </ul>
+  </div>  
+</nav><br>
+
 	<div class="row">
 		<div class="column left">
-			<p><img id="two" src="profile.png" alt="Sarah"></p>
+			<p><img id="two" class="img-thumbnail" src="profile.png" alt="Sarah"></p>
 			<div class="vertical-menu">
  				 <a href="mailto: sarahmasud02@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i>Email</a> 
   				<a href="https://www.linkedin.com/in/sarahmasud/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a>
@@ -38,5 +65,11 @@ She obtained her B.Tech in CS, from Jamia Millia Islamia, New Delhi<br><br>
 			
 		</div>
 	</div>
+
+	<div class="footer">
+		<hr />
+		<h4 style="color:#b30000;">Developed by : <a href="https://www.linkedin.com/in/umarmasud/" target="_blank" style="color:black;"><i>Umar Masud<i></a></h4>
+	</div>
+
 </body>
 </html>

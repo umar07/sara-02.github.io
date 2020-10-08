@@ -2,24 +2,23 @@
 <head>
 	<title>Projects</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<style>
 		body {
 			background-color: #f2f2f2;
 		}
-		#one {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	align-items: right;
-	width:100%;
-	/* height:60px;*/
-	background-color:#a3c2c2;
-	opacity:0.8;
-	box-sizing:border-box;
-	padding:10px 50px;
-	top:0; left:0;
+		.footer {
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
 }
 		#heading {
+			margin-left:10px;
 			text-align: left;
 			font-size:45px;
 			color:#804000;
@@ -41,7 +40,6 @@
 	list-style-type: none;
 	margin:0px;
 	padding:0px;
-	/*position:fixed;*/
 	top:0;
 	}
 	li.p2{
@@ -66,24 +64,38 @@
 	</style>
 </head>
 <body>
-	<nav id="one">
-		<heading style="font-size:25px;letter-spacing:3px;margin-top:40px;"><i><b><a href="index.html" style="text-decoration:none;color:black;">Sarah Masud</a></b></i></heading>
-		<ul class="p1">
-			<li class="p2"><a href="publication.html">Publications</a></li>
-			<li class="p2"><a href="projects.html">Projects</a></li>
-			<li class="p2"><a href="Sarah_Masud.pdf" target="_blank">CV</a></li>
-		</ul>
-	</nav>	
+
+	<nav class="navbar bg-info text-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">SARAH MASUD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="publication.html">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sarah_Masud.pdf" target="_blank">CV</a>
+      </li>    
+    </ul>
+  </div>  
+</nav><br>
+
 	<h1 id="heading"><strong>Projects</strong></h1><br>
-	<h2 class="heading">PhD Course Projects<br><span class="time">Jan 2020- Present</span></h2>
-	<ol>
+
+	<button type="button" class="btn" data-toggle="collapse" data-target="#colp1"><h3 class="heading">PhD Course Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+	<ol id="colp1" class="collapse">
 		<li> Hate Speech Diffusion Visualization: IR Coursework Interactive Visualize the diffusion of hate comments on a sample Twitter network, in terms of inter-user diffusion(static) and topic-wise temporal diffusion(real-time).<br>
 			<a href="https://medium.com/@chhavi19117/visualizing-hate-speech-diffusion-547c241f222e">Project Link</a>
 			</li>
 	</ol><br><hr><br>
 
-		<h2 class="heading">Open Source Contributions<br><span class="time">Dec 2017- Present</span></h2>
-	<ol>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp2"><h3 class="heading">Open Source Contributions<i class="fa fa-caret-down" style="margin-left:5px"></i><br></h3></button>
+	<ol id="colp2" class="collapse">
 		<li>Reviewer: Journal of Open Source Software (February 2020 - Present)<br>
 <a href="https://joss.theoj.org/papers/reviewed_by/@sara-02">Packages Reviewed</a>
 	</li><br>
@@ -113,8 +125,8 @@
 			</li><br>
 		</ol><br><hr><br>
 
-		<h2 class="heading">Research and Contributions<br><span class="time">May 2015- Present</span></h2>
-		<ol>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp3"><h3 class="heading">Research and Contributions<i class="fa fa-caret-down" style="margin-left:5px"></i><br></h3></button>
+		<ol id="colp3" class="collapse">
 			<li>Topic Aware Hate Diffusion on Twitter (PhD Student, LCS2):<br>
 Worked on a modelling hate speech genesis and diffusion over Twitter, combining signals from the user's profile, and external influences. Performed a detailed comparison of the proposed approach against a suit of baselines. Conducted ablation study on various hate signals, and hyper-parameter tuning. Contributed to data collection and literature review. (Paper under review for ICDE 2021).<br>
 <a href="https://github.com/LCS2-IIITD/RETINA">Code Link</a>
@@ -139,17 +151,17 @@ Setup a Hadoop cluster implemented unsupervised topic modelling algorithm, obtai
 		</li><br>
 		</ol><br><hr><br>
 
-		<h2 class="heading">Dependency Analytics: Engineerig @ Red Hat<br><span class="time">Jun 2016 – Oct 2018</span></h2>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp4"><h3 class="heading">Dependency Analytics: Engineerig @ Red Hat<i class="fa fa-caret-down" style="margin-left:5px"></i><br></h3></button>
 
-		<ul style="list-style-type: none">
+		<ul id="colp4" class="collapse" style="list-style-type: none">
 			<li>Worked on an analytics project to help developers with better toolings. The work included data collection, cleaning, and modelling using a graph-based approach. We used various techniques in recommendation systems to improve developer analytics. I have contributed to the work in Graph Databases, License Conflict Resolution, Package Recommendations using Probabilistic Graphical Models, and Matrix Factorization.<br>
 Initially as an intern, I completed PoCs for License and CVE analysis for NPM data, implemented baseline code for data entity-models for ingestion into graph DB.<br>
 In addition, I contributed to data engineering and testing jobs for the project. Fixing issues across the analytics platform's backend. When I got an opportunity, I represented the product at meetups and conferences.<br> <a href="https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics">See Project</a>
 		</li><br>
 	</ul><br><hr><br>
 
-	<h2 class="heading">BTech Course Projects</h2>
-	<ol>
+	<button type="button" class="btn" data-toggle="collapse" data-target="#colp5"><h3 class="heading">BTech Course Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+	<ol id="colp5" class="collapse">
 	<li>Snakes & Ladders: InterProcess Communication Coursework<br>
 A 2 player snake and ladder game. The game was developed to understand the concepts of Inter process communication using shared memory paradigm. The graphics were developed using NCurse.<br>
 <a href=" https://github.com/sara-02/SnakeAndLadderGame">Code Link</a>
@@ -167,8 +179,8 @@ methods using SOCKETS and THREAD programing in C language.</li>
 	
 	</ol><br><hr><br>
 
-		<h2 class="heading">BTech Internship Projects</h2>
-		<ol>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp6"><h3 class="heading">BTech Internship Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+		<ol id="colp6" class="collapse">
 			<li>Diamond Pricing Feature Visualiation: DecisionStats Internship<br>
 A project on pre-model visualization. Wrote scripts to obtain the data, clean it, and then visualise it to understand the relationships among the potential factors affecting diamond's price.
 In addition, I developed code for the course material in Python, SAS, R offered for the summer school on analytics. Also, helped curate the initial material for the company website and provide inputs for the UI designs.<br>
@@ -179,8 +191,8 @@ In addition, I developed code for the course material in Python, SAS, R offered 
 Contributed to the initial development of the OWASP ZAP scripted plugin to allow commands from other JVMs to be run in ZAP. Learned the ropes of open source, version controlling and internet security. (Java)</li>
 		</ol><br><hr><br>
 
-		<h2 class="heading">Google Student Ambassador Projects</h2>
-		<ol>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp7"><h3 class="heading">Google Student Ambassador Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+		<ol id="colp7" class="collapse">
 			<li>FDA’15:<br>
 Added as a part of events section under official Jamia website. The portal provided detailed information about the Faculty Development Program on Robotics, Mechanical Department, JMI.<br>
 		<a href="http://www.jmi.ac.in/upload/EventDetail/FDP15/">Code Link</a>
@@ -193,8 +205,8 @@ A catalog for the Jamia female students. Cataloging the PGs and the hotels aroun
 
 		</ol><br><hr><br>
 
-		<h2 class="heading">Hackathon Projects</h2>
-		<ol>
+		<button type="button" class="btn" data-toggle="collapse" data-target="#colp8"><h3 class="heading">Hackathon Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+		<ol id="colp8" class="collapse">
 			<li>TaskMania:<br>
 As part of International Women Hackathon 2015, an application designed to keep track of your success at tasks over a given period of time.<br>
 		<a href="https://github.com/sara-02/IWH15">Code Link</a>
@@ -212,15 +224,19 @@ As a part of GHCI Hackathon 2015, Developed an online application for an NGO to 
 
 		</ol><br><hr><br>
 
-	<h2 class="heading">Personal Projects</h2>
-	<ol>
+	<button type="button" class="btn" data-toggle="collapse" data-target="#colp9"><h3 class="heading">Personal Projects<i class="fa fa-caret-down" style="margin-left:5px"></i></h3></button>
+	<ol id="colp9" class="collapse">
 		<li>License analysis on the BigQuery Github Archive<br>
 I tried to find the most commonly used licenses across Github repositories and how they fair for top Github languages using Google BigQuery.<br>
 		<a href="https://github.com/sara-02/bq_ghl">Code Link</a>
 		</li><br>
 		
-		</ol><br><hr><br>	
+		</ol><br><br>	
 
+	<div class="footer">
+		<hr />
+		<h4 style="color:#b30000;">Developed by: <a href="https://www.linkedin.com/in/umarmasud/" target="_blank" style="color:black;"><i>Umar Masud<i></a></h4>
+	</div>
 
 </body>
 </html>
